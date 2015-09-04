@@ -1,0 +1,25 @@
+{
+  "name": "normalize-unistyle",
+  "version": "3.0.3",
+  "description": "Normalize CSS as a Unistyle module",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "xo"
+  },
+  "keywords": [
+    "unistyle",
+    "normalize",
+    "css",
+    "es6",
+    "es2015"
+  ],
+  "author": "Joakim Carlstein <joakim@klei.se>",
+  "repository": "joakimbeng/normalize-unistyle",
+  "license": "MIT",
+  "devDependencies": {
+    "xo": "^0.8.0"
+  },
+  "xo": {
+    "esnext": true
+  }
+}
