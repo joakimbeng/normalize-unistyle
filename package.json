@@ -1,6 +1,6 @@
 {
   "name": "normalize-unistyle",
-  "version": "3.0.3",
+  "version": "3.0.4",
   "description": "Normalize CSS as a Unistyle module",
   "main": "build/index.js",
   "scripts": {
