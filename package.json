@@ -2,9 +2,13 @@
   "name": "normalize-unistyle",
   "version": "3.0.3",
   "description": "Normalize CSS as a Unistyle module",
-  "main": "src/index.js",
+  "main": "build/index.js",
   "scripts": {
-    "test": "xo"
+    "test": "xo",
+    "clean": "rimraf build/ && mkdirp build",
+    "prebuild": "npm run -s clean",
+    "build": "babel -d build src",
+    "prepublish": "npm run -s build"
   },
   "keywords": [
     "unistyle",
@@ -17,9 +21,15 @@
   "repository": "joakimbeng/normalize-unistyle",
   "license": "MIT",
   "devDependencies": {
+    "babel": "^5.8.23",
+    "mkdirp": "^0.5.1",
+    "rimraf": "^2.4.3",
     "xo": "^0.8.0"
   },
   "xo": {
-    "esnext": true
+    "esnext": true,
+    "ignores": [
+      "build/**"
+    ]
   }
 }
